@@ -24,7 +24,7 @@ This project aims to:
 Step 1: Local TIFF Image Analysis
 
 - Set up a virtual environment and install dependencies from [PyPI](https://pypi.org/).
-- Download the B4_C3.tif image from IDR.
+- Download the [B4_C3.tif](https://idr.openmicroscopy.org/webclient/?show=image-6001247) image from IDR.
 - Attempt to open it using BioIO. If it fails, investigate and suggest solutions (e.g., OME-TIFF handling).
 - Select two Z-planes around the middle of the stack.
 - Process the selected planes using Cellpose API with the default cyto model.
