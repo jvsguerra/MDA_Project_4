@@ -1,0 +1,10 @@
+bioio==1.4.0
+bioio-nd2==1.0.1
+bioio-tifffile==1.0.1
+cellpose==3.1.1.1
+ftputil==5.1.0
+ipykernel==6.29.5
+ipywidgets==8.1.5
+jupyter==1.1.1
+matplotlib==3.10.1
+numpy==1.26.4
