@@ -21,17 +21,48 @@ This project aims to:
 
 ## Tasks
 
-Step 1: Local TIFF Image Analysis
+Set up a virtual environment using the following commands:
 
-- Set up a virtual environment and install dependencies from [PyPI](https://pypi.org/).
+```bash
+$ pip install virtualenv
+$ virtualenv .venv
+$ source .venv/bin/activate
+```
+
+Start a Jupyter Notebook server:
+
+```bash
+$ jupyter notebook Project4.ipynb
+```
+
+### Step 1: Local TIFF Image Analysis
+
+In this step, we are going to download the B4_C3.tif file from the IDR and save it locally. Then, we will then use Cellpose to segment the nuclei in the image and compare the results with those obtained using Nessys.
+
+The tasks are:
+
+- Install dependencies from [PyPI](https://pypi.org/) in Jupyter Notebook;
+
 - Download the [B4_C3.tif](https://idr.openmicroscopy.org/webclient/?show=image-6001247) image from IDR.
+
+For more details on how to download data from IDR, access <https://idr.openmicroscopy.org/about/download.html>.
+
 - Attempt to open it using BioIO. If it fails, investigate and suggest solutions (e.g., OME-TIFF handling).
+
 - Select two Z-planes around the middle of the stack.
+
 - Process the selected planes using Cellpose API with the default cyto model.
+
 - Display the segmentation results.
 
-Step 2: OME-Zarr Image Analysis
+### Step 2: OME-Zarr Image Analysis
+
+In this step, we will use the OME-Zarr format to analyze the same image. We will load the image using Dask and Cellpose and compare the results with the original Nessys segmentation.
+
+The tasks are:
 
 - Repeat the analysis using the 6001247.zarr file instead of TIFF.
+
 - Load segmentation labels from OME-Zarr.
+
 - Compare the original segmentation labels (from ome.zarr) with the Cellpose output.
