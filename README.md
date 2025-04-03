@@ -29,6 +29,12 @@ $ virtualenv .venv
 $ source .venv/bin/activate
 ```
 
+Add virtual environment to Jupyter Notebook:
+
+```bash
+$ python -m ipykernel install --user --name=.venv
+```
+
 Start a Jupyter Notebook server:
 
 ```bash
