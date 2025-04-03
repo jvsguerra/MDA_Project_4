@@ -21,18 +21,24 @@ This project aims to:
 
 ## Tasks
 
-Set up a virtual environment using the following commands:
+Set up a virtual environment using `uv-astral` with the following commands:
 
 ```bash
-$ pip install virtualenv jupyter
+$ pip install virtualenv
 $ virtualenv .venv
 $ source .venv/bin/activate
+```
+
+In the virtual environment, install the required packages:
+
+```bash
+$ pip install -r requirements.txt
 ```
 
 Add virtual environment to Jupyter Notebook:
 
 ```bash
-$ python -m ipykernel install --user --name=.venv
+$ uv python -m ipykernel install --user --name=.venv
 ```
 
 Start a Jupyter Notebook server:
