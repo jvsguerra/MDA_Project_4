@@ -24,7 +24,7 @@ This project aims to:
 Set up a virtual environment using the following commands:
 
 ```bash
-$ pip install virtualenv
+$ pip install virtualenv jupyter
 $ virtualenv .venv
 $ source .venv/bin/activate
 ```
