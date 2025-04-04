@@ -1,6 +1,6 @@
 # Project 4
 
-This repository contains the source code for Project 4 for the "Microscopy data analysis: machine learning and the BioImage archive" course.
+This repository contains the source code for Project 4 for the "Microscopy data analysis: machine learning and the BioImage archive" course (03/2025).
 
 ## Description
 
@@ -78,3 +78,11 @@ The tasks are:
 - Load segmentation labels from OME-Zarr.
 
 - Compare the original segmentation labels (from ome.zarr) with the Cellpose output.
+
+## Authors
+
+- João Victor Guerra ([@jvsguerra](https://github.com/jvsguerra))
+- Roberto Aponte Rivera
+- Jens Wendt
+- Antonios Georgantzoglou
+- Daan Wolters
